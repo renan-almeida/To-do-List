@@ -84,7 +84,8 @@ npm install
 # Rode o projeto
 npm run dev
 
-
-#🙋‍♂️ Autor
-## Desenvolvido com dedicação por **Renan Almeida**
-🔗 GitHub[]
+```
+## 🙋‍♂️ Autor
+ Desenvolvido com dedicação por **Renan Almeida**
+ <br>
+🔗 Github
