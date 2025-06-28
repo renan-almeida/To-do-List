@@ -55,16 +55,16 @@ Este projeto foi criado com o intuito de:
 
 ## 🗂️ Estrutura de Pastas
 
-src/
-├── components/
-│ ├── Todo.jsx
-│ ├── TodoForm.jsx
-│ ├── Search.jsx
-│ ├── Filter.jsx
-│ └── Category.jsx
-├── App.jsx
-├── index.js
-└── App.css
+src/ <br>
+├── components/ <br>
+│ ├── Todo.jsx <br>
+│ ├── TodoForm.jsx <br>
+│ ├── Search.jsx <br>
+│ ├── Filter.jsx <br>
+│ └── Category.jsx <br>
+├── App.jsx <br>
+├── index.js <br>
+└── App.css <br>
 
 
 ---
