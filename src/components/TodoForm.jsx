@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function TodoForm({ addTodo }) {
+function TodoForm({ addTodo, categories }) {
 
   const [value, setValue] = useState('');
   const [category, setCategory] = useState('');
@@ -29,9 +29,9 @@ function TodoForm({ addTodo }) {
           />
         <select onChange={(e) => setCategory(e.target.value)} value={category}>
           <option value="">Selecione uma categoria</option>
-          <option value="Trabalho">Trabalho</option>
-          <option value="Pessoal">Pessoal</option>
-          <option value="Estudos">Estudos</option>
+          {categories.map((cat, index) => (
+              <option key={index} value={cat.text}>{cat.text}</option>
+          ))}
         </select>
         <button type="submit">Criar tarefa</button>
       </form>

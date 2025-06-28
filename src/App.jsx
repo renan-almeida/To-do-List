@@ -4,6 +4,7 @@ import Todo from './components/Todo.jsx'
 import TodoForm from './components/TodoForm.jsx';
 import Search from './components/Search.jsx';
 import Filter from './components/Filter.jsx';
+import Category from './components/Category.jsx';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -25,6 +26,15 @@ function App() {
       category: "Estudos",
       isCompleted: false
     },
+  ]);
+
+  const [categories, setCategories] = useState([
+    {   id: 1,
+       text: "Trabalho" },
+    {   id: 2,
+       text: "Pessoal"},
+    {   id: 3,
+       text: "Estudos"}
   ]);
 
   const [search, setSearch] = useState("");
@@ -53,6 +63,14 @@ const completeTodo = (id) => {
    (todo.isCompleted = !todo.isCompleted) : todo);
   setTodos(newTodos);
 };
+
+const addCategory = (text) => {
+  const newCategory = {
+    id: categories.length + 1,
+    text
+  };
+  setCategories([...categories, newCategory]);
+}
   
   return (
     <div className='app'>
@@ -80,7 +98,8 @@ const completeTodo = (id) => {
                 completeTodo={completeTodo}/>
         ))}
       </div>
-      <TodoForm addTodo={addTodo} />
+      <TodoForm addTodo={addTodo} categories={categories} />
+      <Category addCategory={addCategory} />
       
     </div>
   );    
