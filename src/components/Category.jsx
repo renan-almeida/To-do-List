@@ -17,6 +17,7 @@ function Category  ({ addCategory })  {
         }
     return (
         <div className="category">
+            <div className="category-Options">
             <h2>Adicionar categoria:</h2>
             <form onSubmit={handleSubmit}>
             <input 
@@ -26,6 +27,7 @@ function Category  ({ addCategory })  {
                 value={category} />
             <button type="submit">Criar categoria</button> 
         </form>
+        </div>
     </div>
   )
 }

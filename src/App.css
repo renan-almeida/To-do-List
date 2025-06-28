@@ -101,3 +101,6 @@ input, select {
 .filter-options div {
   flex: 1 1 0;
 }
+.category {
+  margin-bottom: 10px;
+}
